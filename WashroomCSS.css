@@ -1,0 +1,185 @@
+WASHROOMS NOW | CSS PAGE
+
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+
+body{
+	text-align: center;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 120px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	vertical-align: middle;
+}
+
+a:link{
+	color: WHITE;
+}
+
+a:visited{
+	color:BLACK;
+}
+
+a:hover{
+	color:BLACK;
+}
+
+#one1{
+	background-color: #067BC2;
+	width: 100%;
+	height: 30%;
+	vertical-align: middle;
+}
+
+#two1{
+	background-color: #F15025;
+	width: 100%;
+	height: 20%;
+	font-size: 80px;
+	font-family: 'Oswald', sans-serif;
+	vertical-align: middle;
+	display: table;
+}
+
+#three1{
+	background-color: #F37748;
+	width: 100%;
+	height: 20%;
+	font-size: 80px;
+	font-family: 'Oswald', sans-serif;
+	vertical-align: middle;
+	display: table;
+}
+
+#four1{
+	background-color: #84BCDA;
+	width: 100%;
+	height: 30%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+.mainLink{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#bottomLink{
+	display: table-cell;
+	vertical-align: bottom;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#one2{
+	background-color: #067BC2;
+	width: 100%;
+	height: 30%;
+	vertical-align: middle;
+}
+
+#two2{
+	background-color: #F15025;
+	width: 100%;
+	height: 10%;
+	font-size: 80px;
+	font-family: 'Oswald', sans-serif;
+	vertical-align: middle;
+	display: table;
+}
+
+#three2{
+	background-color: #F37748;
+	width: 100%;
+	height: 10%;
+	font-size: 80px;
+	font-family: 'Oswald', sans-serif;
+	vertical-align: middle;
+	display: table;
+}
+
+#four2{
+	background-color: #84BCDA;
+	width: 100%;
+	height: 50%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.left{
+	width: 25%;
+	height: 10%;
+	vertical-align: middle;
+	display: inline-block;
+	float: left;
+
+}
+
+.right{
+	width: 75%;
+	height: 10%;
+	vertical-align: middle;
+	display: inline-block;
+	float: right;
+}
+
+.feature{
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+
+	background-color: #F37748; 
+    border: 5px solid #F37748;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.feature:hover{
+	color: black;
+}
+
+.access{
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+
+	background-color: #F15025; 
+    border: 5px solid #F15025;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.access:hover{
+	color: black;
+
+}
+
+
+
+

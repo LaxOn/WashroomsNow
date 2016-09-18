@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>WashroomNow!</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <style>
+      html, body {height: 100%;
+                  margin: 0;
+                  padding: 0;}
+            #map {height: 100%}
+    </style>
+
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUwh7c7urXrDXemNXg3DJB8TTIWfkoQ7w&callback=initMap"
+    async defer></script>
+    <script>
+      function initMap() {
+        if (navigator && navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);}
+        else {console.log('Geolocation is not supported')}}
+    
+      function errorCallback() {}
+     
+      function successCallback(myloc) {
+        var E5FXF = {lat: 43.472745, lng: -80.539971};
+        var E5FXM = {lat: 43.472760, lng: -80.539928};
+        var closestwr = E5FXM
+        var MyLatlng = {lat: myloc.coords.latitude, lng: myloc.coords.longitude};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+                                      zoom: 50,
+                                      center: MyLatlng})
+
+        var marker1 = new google.maps.Marker({
+          position: E5FXF,
+          map: map,
+          title: 'E5 Female Washroom'});
+
+        var marker2 = new google.maps.Marker({
+          position: E5FXM,
+          map: map,
+          title: 'E5 Male Washroom'});
+
+        var marker3 = new google.maps.Marker({
+          position: MyLatlng,
+          map: map,
+          title: 'My Location'})
+
+        var closestcoor = [MyLatlng, closestwr];
+
+        var closestpath = new google.maps.Polyline({
+          path: closestcoor,
+          geodesic: true,
+          strokeColor: '#FF0000',
+          strokeOpacity: 1.0,
+          strokeWeight: 2});
+
+        closestpath.setMap(map)};
+
+    </script>
+  </body>
+</html>
